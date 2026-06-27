@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triolingo — Placement Exam</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="placement">
+    <header class="topbar">
+      <a class="brand" href="index.html">Triolingo</a>
+      <nav class="page-nav">
+        <a href="placement.html" class="active">Placement</a>
+        <a href="story.html">Story</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <p class="eyebrow">JLPT placement</p>
+        <h1>Find the right level for your Japanese reading journey.</h1>
+        <p class="hero-copy">Answer a few quick prompts so the stories match your current Japanese vocabulary and confidence.</p>
+      </section>
+
+      <section class="card feature-card">
+        <h2>Placement exam</h2>
+        <p class="feature-copy">Start by selecting your JLPT self-assessment level. Then read a short diagnostic paragraph at that level and click any words you don't understand.</p>
+        <form id="placement-form">
+          <p class="feature-copy">Read the diagnostic paragraph below and click any words you do not understand. Then submit the placement to record your result.</p>
+          <div id="diagnostic" class="story-block" aria-live="polite"></div>
+
+          <div class="question">
+            <button type="submit">Submit placement</button>
+          </div>
+        </form>
+        <div id="placement-result" class="result-box hidden"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

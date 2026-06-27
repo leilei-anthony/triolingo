@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triolingo — Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <header class="topbar">
+      <a class="brand" href="index.html">Triolingo</a>
+      <nav class="page-nav">
+        <a href="placement.html">Placement</a>
+        <a href="story.html">Story</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <p class="eyebrow">Japanese progress</p>
+        <h1>Track your Japanese vocabulary growth and reading momentum.</h1>
+        <p class="hero-copy">Your dashboard summarizes your current level, vocabulary, and streak in one clean view.</p>
+      </section>
+
+      <section class="card feature-card">
+        <h2>Japanese learning dashboard</h2>
+        <p class="feature-copy">Watch your Japanese progress increase as you complete stories and quizzes.</p>
+        <div class="stats-grid">
+          <article class="stat">
+            <span class="stat-label">JLPT sub-level</span>
+            <strong id="stat-level">—</strong>
+          </article>
+          <article class="stat">
+            <span class="stat-label">Vocabulary</span>
+            <strong id="stat-vocab">0</strong>
+          </article>
+          <article class="stat">
+            <span class="stat-label">Reading streak</span>
+            <strong id="stat-streak">3 days</strong>
+          </article>
+        </div>
+        <div class="milestone-card" id="milestone-card">
+          <h3>Milestone mastery</h3>
+          <p id="milestone-copy">Collect 20 learned words to unlock a full mastery story.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triolingo — Story</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="story">
+    <header class="topbar">
+      <a class="brand" href="index.html">Triolingo</a>
+      <nav class="page-nav">
+        <a href="placement.html">Placement</a>
+        <a href="story.html" class="active">Story</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <p class="eyebrow">Japanese story practice</p>
+        <h1>Choose a genre and read a Japanese story tailored to your level.</h1>
+        <p class="hero-copy">The engine keeps the story clear while introducing a handful of new Japanese target words.</p>
+      </section>
+
+      <section id="story-card" class="card feature-card">
+        <h2>Story generator</h2>
+        <p class="feature-copy">Pick your favorite mood and the system will craft a short, readable Japanese passage for you.</p>
+        <div class="genre-row" id="genre-row"></div>
+        <button id="generate-story" class="secondary">Generate story</button>
+        <div id="story-content" class="story-block"></div>
+        <div id="quiz-link" class="quiz-link hidden"></div>
+        <div id="tooltip" class="tooltip hidden"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

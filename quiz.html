@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triolingo — Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="quiz">
+      <header class="topbar">
+      <a class="brand" href="index.html">Triolingo</a>
+      <nav class="page-nav">
+        <a href="placement.html">Placement</a>
+        <a href="story.html">Story</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <p class="eyebrow">Japanese quiz</p>
+        <h1>Test what you learned from the Japanese story.</h1>
+        <p class="hero-copy">A quick check after the story helps cement the new Japanese words in context.</p>
+      </section>
+
+      <section class="card feature-card">
+        <h2>Comprehension quiz</h2>
+        <p class="feature-copy">Answer four simple questions based on the Japanese target vocabulary in your current story.</p>
+        <div id="quiz-notice" class="quiz-notice hidden"></div>
+        <form id="quiz-form" class="quiz-form">
+          <div id="quiz-questions"></div>
+          <button type="submit">Submit quiz</button>
+        </form>
+        <div id="quiz-result" class="result-box hidden"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
