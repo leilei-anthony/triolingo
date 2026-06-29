@@ -8,7 +8,9 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sky2820.triolingo",
+      "appleTeamId": "ZQB59RG75Z"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +23,20 @@
     },
     "plugins": [
       "expo-router",
-      "expo-splash-screen"
+      "expo-splash-screen",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "b4f851c0-c4ad-433c-b037-1de74cb89a7e"
+      }
+    },
+    "owner": "sky2820"
   }
 }

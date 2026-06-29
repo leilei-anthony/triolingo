@@ -11,8 +11,7 @@ export type GenreId =
 export type ThemeMode = 'washi' | 'sepia' | 'dark';
 export type WordStatus = 'new' | 'learning' | 'known' | 'locked';
 export type QuestionKind = 'placement' | 'comprehension' | 'vocab-context' | 'story-comprehension';
-export type OnboardingScreen = 'welcome' | 'login' | 'placement-choice' | 'placement-exam' | 'placement-result' | 'genre';
-export type ReadView = 'home' | 'reading' | 'exam-intro' | 'exam' | 'results';
+export type ScreenName = 'welcome' | 'login' | 'placement-choice' | 'placement-exam' | 'placement-result' | 'genre-selection' | 'read' | 'journey' | 'progress' | 'profile' | 'story' | 'exam' | 'results';
 export type PlacementMode = 'exam' | 'beginner';
 
 export type Genre = {
@@ -67,19 +66,14 @@ export type JourneyUnit = {
 };
 
 export type KomorebiState = {
-  onboardingComplete: boolean;
-  onboardingScreen: OnboardingScreen;
-  walkIndex: number;
+  onboardingIndex: number;
   placementMode: PlacementMode;
   placementIndex: number;
   placementAnswers: Record<string, number>;
   selectedGenres: GenreId[];
-  readView: ReadView;
   segmentIndex: number;
   glossedWordIds: string[];
   completedCheckIds: string[];
-  checkSegmentId: string | null;
-  checkAnswer: number | null;
   examIndex: number;
   examAnswers: Record<string, number>;
   theme: ThemeMode;
@@ -90,23 +84,4 @@ export type KomorebiState = {
   totalCount: number;
   level: string;
   arcComplete: boolean;
-  loadingText: string | null;
-};
-
-export type JLPTLevel = 'N5' | 'N4' | 'N3' | 'N2';
-
-export type WordEntry = {
-  word: string;
-  reading: string;
-  definition: string;
-};
-
-export type TextSegment =
-  | { type: 'plain'; text: string }
-  | { type: 'word'; text: string; entry: WordEntry };
-
-export type QuizQuestion = {
-  prompt: string;
-  answer: string;
-  distractors: string[];
 };
