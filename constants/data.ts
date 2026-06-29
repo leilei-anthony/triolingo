@@ -2,16 +2,16 @@ import type { ChoiceQuestion, Genre, JourneyUnit, StorySegment, TargetWord } fro
 
 export const walkthroughSlides = [
   {
-    title: '今の自分に読める日本語を。',
-    subtitle: '木漏れ日は、今日の読解力に合う物語を静かに届けます。',
+    title: 'Read Japanese you can actually understand.',
+    subtitle: 'Komorebi gives you stories pitched at exactly the level you can handle today.',
   },
   {
-    title: '物語も、語彙も、少しずつ深く。',
-    subtitle: '一度に増やす新出語は少なめ。読み終えたくなる文脈の中で覚えます。',
+    title: 'Stories at your level - that grow as you do.',
+    subtitle: 'A few new words each session, woven into a narrative you actually want to finish.',
   },
   {
-    title: 'N3までの道のりを、無理なく見える形に。',
-    subtitle: '連続記録に追われず、増えた語彙を一語ずつ確かめられます。',
+    title: 'Progress toward N3, no streaks required.',
+    subtitle: 'Watch your vocabulary grow along a calm, visible path. Come back for the story, not the guilt.',
   },
 ];
 
